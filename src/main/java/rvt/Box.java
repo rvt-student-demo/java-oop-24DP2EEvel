@@ -2,7 +2,7 @@ package rvt;
 
 import java.util.ArrayList;
 
-public class Box {
+public class Box implements packable {
     private double capacity;
     private ArrayList<packable> items;
 
@@ -17,6 +17,7 @@ public class Box {
         }
     }
 
+    @Override
     public double weight() {
         double totalWeight = 0;
 
